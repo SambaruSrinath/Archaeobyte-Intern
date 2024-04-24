@@ -1,50 +1,42 @@
-# online-grocery-shopping
-Online Grocery Shopping is an eCommerce based web application for our Web Programming project. I have developed a sample in which user can search and find necessary information about any grocery item, can proceed to checkout to buy products. User can create an account, update personal information, can check its past activities, orders and transactions, and cart items.
+# Food Ordering System
+
+## Screenshots
+### Login
+![Login](https://image.prntscr.com/image/aY4ghnqETTWc8w6RRqcSOw.jpg)
+### Register
+![Register](https://image.prntscr.com/image/B67umVCPSae_38Gfenxlbw.jpg)
+### Modify Food Menu (Admin)
+![Modify Menu](https://image.prntscr.com/image/bAoF4lB7THOSZ-9zI5eXzg.jpg)
+### Food Menu (Customer)
+![View tickets](https://image.prntscr.com/image/dEVkeAVhRxWbxCu_uNB5ew.jpg)
+### Placing Order
+![Records](https://image.prntscr.com/image/QSWkwRmNSkOnL9TrrfkpJA.jpg)
+### View all Orders(Admin)
+![Records](https://image.prntscr.com/image/QsUxzm5nTRatVyt5PY-xNg.jpg)
+### List Tickets
+![View All Tickets(Admin)](https://image.prntscr.com/image/8cr_-H4wRQC3HxOVBQseFA.jpg)
+### Place & View Tickets(Customer)
+![Tickets(User)](https://image.prntscr.com/image/M_VIy9bRQCe9eYFsn4AWUA.jpg)
+### Communicating on Support Ticket
+![Support Ticket](https://image.prntscr.com/image/aR7kQo5AQpSa_Y3kU3SDcA.jpg)
+### Modify Details(Customer)
+![Modifying Records](https://image.prntscr.com/image/sXogBp55SMahRleBIv7Plg.jpg)
+### User Management(Admin)
+![Modifying Records](https://image.prntscr.com/image/St11KReLQVOXHctcmsHY-g.jpg)
 
 
+How To Install -
+---------
 
+1. Create Database food.
+2. Run food.sql script provided in sql folder.
+3. Go to login.php and try out our application. Sample user credentials can be found in users & wallet_details table.
 
-
-
-# Technologies Used
-Frontend Languages: HTML, CSS, and Client-Side JavaScript
-Backend: PHP7 & MySQL
-Database: MYSQL
-Tools: MS Visual Code
-
-# System Configuration
-
-
-MySQL has been used to create and host the database for the internet banking website.
-
-Other than the languages/tools mentioned above no other/external libraries and/or web-page templates have been used, everything has been coded from ground-up straight from scratch.
-
-How to build/use
-Setup an environment which supports web development like LAMP on Linux systems OR install WampServer/XAMPP or anything similar on Windows.
-
-Copy the folder net-banking or the files in it to the location of the localhost. For example "/var/www/html", the loaction of localhost in Ubuntu.
-
-# Import the online_grocery.sql database into your MySQL setup.
-
-Edit the file connect.php and give proper username and password of your MySQL setup.
-
-Open a browser and test wether the setup works or not by visiting the home page. Type "localhost/index.php" as the URL in the browser to visit the home page.
-
-
-However some important usernames and passwords are provided below :
-
-Username of admin is "admin@gmail.com" & password is "password".
-
-
-# Installing XAMPP
-Xampp Server 3.4
-Importing database in MySQL
-Details about the project
-An exhaustive list of features, documentation, design hierarchy, details about the web pages, database, design characterstics/features and a lot more can be found here.
-
-The ER Diagram can also be found on the link given above or can be viewed here.
-
-# Description of the various folders
-/online_grocery_shopping : Contains the source code of the website
-/online_grocery_shopping/images : Contains various images and icon vectors used as resources in the website
-/online_grocery_shopping/css : Contains various fonts(.css files) used in the website
+Note -
+---------
+1. This is not ready for PRODUCTION.
+2. The username and password of sample users are stored in table `users`.
+3. Only Customers with "Verified" status can place orders using "Cash on Delivery" option.
+4. By default a new customer gets 2000 coins in Wallet on signing up, and a fake Credit card number & CVV number is generated and stored in SQL Table "wallet_details" with corresponding new customer's ID.
+5. Use that Card Number & CVV while placing an order, else order won't be successful or use "Cash on delivery" option.
+6. What's lacking? Dynamic payment(real payment system) and error reporting lacks in this project. And also one might wish for showing corresponding food item's photo and all that stuff.
